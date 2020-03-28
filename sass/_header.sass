@@ -1,0 +1,46 @@
+.header
+  background-color: $green
+  padding-top: 5px
+  padding-bottom: 5px
+  &-logo
+    display: block
+    &_img
+      display: block
+  &-box
+    display: flex
+    justify-content: space-between
+  &-nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_text
+      color: #ffffff
+      font-size: 20px
+      text-decoration: none
+      text-transform: uppercase
+      margin-left: 70px
+          
+@media (max-width: 992px)
+  .header
+    &-nav
+      &_text
+        font-size: 18px    
+        margin-left: 40px      
+
+@media (max-width: 768px)
+  .header
+    &-nav
+      &_text
+        font-size: 14px    
+        margin-left: 20px
+
+@media (max-width: 576px)
+  .header
+    &-nav
+      &_text   
+        margin-right: 25px  
+        &:nth-child(3),
+        &:nth-child(4)
+          display: none
+
+

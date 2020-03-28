@@ -1,0 +1,46 @@
+.anmelden
+  background-color: $green
+  padding-top: 30px
+  padding-bottom: 30px
+  &-box
+    display: flex
+    justify-content: center
+  &-right
+    text-align: center
+    &_text
+      font-size: 18px
+      color: #ffffff
+      margin-left: 75px
+    &_btn
+      color: #FF8C64
+      background-color: #fff
+      padding: 5px 30px
+      border: none
+      border-radius: 100px
+      font-size: 36px
+      outline: none
+      margin-top: 6px
+      margin-left: 50px
+.special
+  text-decoration: underline    
+
+@media (max-width: 992px)
+  .anmelden
+    &-box
+      justify-content: space-around      
+    &-right
+      &_text,
+      &_btn
+        margin-left: 0  
+
+@media (max-width: 768px)
+  .anmelden
+    &-box
+      &_btn
+        font-size: 28px 
+        padding: 12px 50px  
+    &-right
+      &_text,
+      &_btn
+        font-size: 16px    
+         

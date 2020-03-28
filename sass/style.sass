@@ -1,0 +1,80 @@
+$green: #03B488
+$orange: #FF4800
+$yellow: #FFF8AE
+$border-grey: #D4D4D4
+$bg-grey: #F4F4F4
+$footer-grey: #3A3633
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  color: #000000
+  font-size: 18px
+  font-family: 'Roboto', sans-serif
+
+.container
+  max-width: 1110px
+  width: 90%
+  margin: 0 auto
+
+.title
+  font-size: 36px
+  color: #ffffff
+  font-weight: bold
+  background: $orange
+  display: block 
+  padding-right: 23px
+  padding-left: 23px
+  text-transform: uppercase
+  max-width: 95%
+
+
+.subtitle  
+  font-size: 24px
+  text-transform: uppercase
+  font-weight: bold
+
+.btn
+  padding: 12px 110px
+  background-color: $orange
+  font-size: 36px
+  text-transform: uppercase
+  color: #fff
+  border: none
+  border-radius: 100px
+  cursor: pointer
+  outline: none  
+  font-weight: bold
+.input  
+  padding: 18px 20px
+  border: 1px solid #DEE0E4
+  font-size: 20px  
+  border-radius: 4px
+  outline: none
+
+@media (max-width: 992px)
+  .container
+    max-width: 900px
+
+@media (max-width: 768px)
+  .container
+    max-width: 680px
+
+@media (max-width: 576px)    
+  .container
+    max-width: 490px
+
+
+@import 'header'
+@import 'main' 
+@import 'anmelden' 
+@import 'offer' 
+@import 'bonus' 
+@import 'reviews'
+@import 'faq'
+@import 'footer'
+@import 'modal'   
+@import 'modal-leave'  

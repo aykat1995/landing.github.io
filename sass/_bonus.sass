@@ -1,0 +1,66 @@
+.bonus
+  background-color: $bg-grey
+  border: 1px solid $border-grey
+  padding-top: 53px
+  &-box
+    display: flex
+    justify-content: space-around
+  &-text
+      &_title
+        display: block
+        margin-top: 60px
+      &_subtitle
+        margin-top: 40px
+        margin-bottom: 50px  
+      &_text
+        max-width: 445px  
+
+@media (max-width: 992px)   
+  .bonus
+    &-box
+      align-items: flex-end
+    &-img
+      max-width: 391px
+      max-height: 456px   
+    &-text
+      &_text
+        max-width: 390px  
+        margin-bottom: 35px
+      &_title
+        margin-top: 0
+
+@media (max-width: 768px)   
+  .bonus
+    &-img
+      max-width: 324px
+      max-height: 378px     
+    &-text
+      &_title
+        padding-right: 55px 
+        padding-left: 50px 
+        font-size: 24px 
+      &_subtitle
+        font-size: 20px 
+      &_text
+        font-size: 16px 
+        max-width: 324px     
+
+@media (max-width: 576px)
+  .bonus
+    &-box
+      flex-wrap: wrap
+      flex-direction: column-reverse
+    &-text
+      &_title
+        font-size: 22px
+      &_text
+        max-width: 100%
+    &-img
+      max-width: 228px
+      max-height: 267px
+      margin: 0 auto
+
+
+    
+  
+  

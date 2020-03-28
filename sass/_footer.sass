@@ -1,0 +1,26 @@
+.footer 
+  background-color: $footer-grey
+  padding-top: 45px
+  padding-bottom: 35px
+  &-box
+    display: flex
+    justify-content: space-around
+    align-items: center
+  &-block
+    max-width: 185px
+    &_text,
+    &_email
+      font-size: 14px
+      color: #ffffff 
+      display: block 
+      line-height: 17px
+      text-decoration: none
+      display: inline-block
+@media (max-width: 768px)
+  .footer
+    &-block
+      &_text,
+      &_email
+        font-size: 12px
+
+

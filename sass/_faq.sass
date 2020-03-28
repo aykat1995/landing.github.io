@@ -1,0 +1,51 @@
+.faq
+  background-color: $bg-grey
+  padding: 80px 90px 100px 100px
+  &_title
+    font-size: 28px
+    font-weight: bold
+    text-transform: uppercase
+    margin-bottom: 70px
+    text-align: center
+  &-block
+    margin-bottom: 43px
+    display: flex
+    justify-content: start
+    align-items: center
+    flex-wrap: wrap
+    &_symbol
+      font-size: 36px
+      color: $green
+      font-weight: bold
+      margin-right: 25px
+    &_ans
+      display: inline  
+      margin-left: 40px
+      margin-top: 25px
+
+        
+          
+
+
+@media (max-width: 768px)
+  .faq
+    padding-top: 50px
+    padding-bottom: 20px
+    &_title
+      margin-bottom: 40px
+      font-size: 18px
+    &-block
+      margin-left: 30px     
+      &_text
+        font-size: 16px         
+
+
+@media (max-width: 576px)
+  .faq
+    padding-top: 50px
+    padding-bottom: 20px
+    &-block
+      margin-left: 30px    
+
+
+

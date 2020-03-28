@@ -1,0 +1,84 @@
+.main
+  padding-top: 40px 
+  background: url(../img/main/background.png) no-repeat center / cover
+  min-height: 650px 
+  &-title
+    text-align: center
+  &-subtitle
+    display: flex
+    justify-content: center
+    margin-top: 20px
+    margin-bottom: 40px
+    &_text
+      font-size: 18px
+      color: #fff
+      margin-right: 40px
+  &-img
+    margin-top: 80px
+  &-box
+    display: flex
+    justify-content: space-between    
+  &-text
+  &-block
+    display: flex
+    justify-content: start
+    align-items: center
+    margin-bottom: 10px
+    background: linear-gradient(to right, #fff 28%, $yellow 28%)
+    &_left
+      min-width: 95px
+      text-align: center
+      min-weight: 
+    &_right
+      max-width: 250px
+      padding: 14px 15px 15px 20px
+      display: flex
+      justify-content: center
+      align-items: top
+    &_text
+      font-size: 14px
+      font-style: italic
+      color: #000000
+      margin-top: 10px
+    &_quotes
+      display: inline-block
+      width: 19px
+      height: 19px
+      margin-right: 12px  
+
+@media (max-width: 992px)
+  .main
+    &-box
+      justify-content: center
+    &-text
+      display: none
+
+@media (max-width: 768px)
+  .main
+    &-title
+      font-size: 28px 
+    &-subtitle
+      flex-direction: column
+      text-align: center
+      margin-bottom: 0px
+      &_text
+        margin-bottom: 9px
+        margin-right: 0
+    &-img
+      margin-top: 35px    
+
+@media (max-width: 576px)
+  .main
+    &-title
+      font-size: 22px 
+    &-img
+      max-width: 486px
+      max-height: 286px  
+      margin-top: 110px
+      
+     
+  
+
+
+
+
