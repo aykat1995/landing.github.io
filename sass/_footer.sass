@@ -19,8 +19,22 @@
 @media (max-width: 768px)
   .footer
     &-block
+      max-width: 160px
       &_text,
       &_email
         font-size: 12px
-
+    &-box
+      padding-left: 40px    
+@media (max-width: 576px)
+  .footer
+    &-box
+      flex-wrap: wrap
+      padding-left: 0
+    &-block
+      &:last-child
+        width: 300px
+        display: flex
+        justify-content: space-between 
+        
+        
 

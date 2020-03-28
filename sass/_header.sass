@@ -19,20 +19,30 @@
       text-decoration: none
       text-transform: uppercase
       margin-left: 70px
+      &:first-child
+        margin-left: 0
+
+@media (max-width: 1050px)
+  .header
+    &-nav
+      &_text
+        margin-left: 40px    
+        
           
 @media (max-width: 992px)
   .header
     &-nav
       &_text
         font-size: 18px    
-        margin-left: 40px      
+        margin-left: 40px  
 
-@media (max-width: 768px)
+@media (max-width: 883px)
   .header
     &-nav
       &_text
+        margin-left: 20px  
         font-size: 14px    
-        margin-left: 20px
+      
 
 @media (max-width: 576px)
   .header
