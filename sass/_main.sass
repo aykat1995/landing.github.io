@@ -47,15 +47,20 @@
       height: 19px
       margin-right: 12px  
 
+@media (max-width: 1136px)
+  .main
+    &-title
+      max-width: 92%
+    &-box
+      justify-content: center  
+    &-text
+      display: none
+
+
 @media (max-width: 992px)
   .main
     &-title
       max-width: 95%
-    &-box
-      justify-content: center
-    &-text
-      display: none
-
 
 @media (max-width: 954px)
   .main
@@ -69,12 +74,23 @@
         margin-bottom: 9px
         margin-right: 0
     &-img
-      margin-top: 35px    
+      margin-top: 35px  
+
+@media (max-width: 754px)
+  .main
+    &-title
+      font-size: 22px
+      max-width: 100%
+
+@media (max-width: 640px)
+  .main
+    &-img
+      max-width: 90%      
 
 @media (max-width: 576px)
   .main
+    padding-top: 65px
     &-title
-      font-size: 22px 
       max-width: 100%
       padding-left: 0
       padding-right: 0
