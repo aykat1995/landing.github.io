@@ -153,7 +153,7 @@ body {
 .main {
   padding-top: 40px;
   background: url(../img/main/background.png) no-repeat center/cover;
-  min-height: 650px;
+  min-height: 630px;
 }
 
 .main-title {
@@ -259,7 +259,7 @@ body {
   }
 }
 
-@media (max-width: 954px) {
+@media (max-width: 960px) {
   .main-title {
     font-size: 28px;
   }
@@ -281,6 +281,9 @@ body {
 }
 
 @media (max-width: 754px) {
+  .main {
+    min-height: 630px;
+  }
   .main-title {
     font-size: 22px;
     max-width: 100%;
@@ -288,12 +291,6 @@ body {
 }
 
 @media (max-width: 640px) {
-  .main-img {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 576px) {
   .main {
     padding-top: 65px;
   }
@@ -306,6 +303,15 @@ body {
     max-width: 486px;
     max-height: 286px;
     margin-top: 110px;
+  }
+}
+
+@media (max-width: 520px) {
+  .main {
+    min-height: 600px;
+  }
+  .main-img {
+    max-width: 95%;
   }
 }
 
@@ -383,6 +389,13 @@ body {
   }
   .anmelden-right_text {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 520px) {
+  .anmelden-box_btn {
+    font-size: 18px;
+    padding: 0px 40px;
   }
 }
 
@@ -764,6 +777,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+}
+
+.faq-block-wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -859,25 +877,36 @@ body {
 }
 
 @media (max-width: 768px) {
-  .footer-block {
-    max-width: 160px;
-  }
-  .footer-block_text, .footer-block_email {
-    font-size: 12px;
-  }
-  .footer-box {
-    padding-left: 40px;
-  }
-}
-
-@media (max-width: 576px) {
   .footer-box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-left: 0;
+  }
+  .footer-block {
+    min-width: 170px;
+    margin-right: 30px;
   }
   .footer-block:last-child {
-    margin-left: 50px;
+    max-width: 160px;
+    margin-right: 160px;
+  }
+  .footer-box {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 615px) {
+  .footer-box {
+    padding-left: 0;
+  }
+  .footer-block {
+    min-width: 158px;
+    margin-right: 0;
+  }
+  .footer-block:last-child {
+    margin-right: 105px;
+  }
+  .footer-block_text, .footer-block_email {
+    font-size: 12px;
   }
 }
 
@@ -987,6 +1016,17 @@ body {
   }
   .modal-form_btn {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-box {
+    padding: 50px;
+  }
+  .modal-form_input {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
   }
 }
 

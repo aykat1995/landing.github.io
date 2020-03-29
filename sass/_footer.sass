@@ -16,21 +16,34 @@
       line-height: 17px
       text-decoration: none
       display: inline-block
+
 @media (max-width: 768px)
-  .footer
-    &-block
-      max-width: 160px
-      &_text,
-      &_email
-        font-size: 12px
-    &-box
-      padding-left: 40px    
-@media (max-width: 576px)
   .footer
     &-box
       flex-wrap: wrap
+    &-block
+      min-width: 170px
+      margin-right: 30px
+      &:last-child
+        max-width: 160px
+        margin-right: 160px
+    &-box
+      padding-left: 20px    
+
+@media (max-width: 615px)
+  .footer
+    &-box
       padding-left: 0
     &-block
+      min-width: 158px
+      margin-right: 0
       &:last-child
-        margin-left: 50px  
+        margin-right: 105px
+      &_text,
+      &_email
+        font-size: 12px  
+
+
+
+
 
