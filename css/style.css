@@ -160,7 +160,7 @@ body {
 
 .main {
   padding-top: 40px;
-  background: url(../img/main/background.png) no-repeat center/cover;
+  background: url(../img/main/background.png) no-repeat center bottom/cover;
   min-height: 630px;
 }
 
@@ -686,12 +686,19 @@ body {
 
 @media (max-width: 1165px) {
   .reviews-box {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .reviews_title {
     max-width: 85%;
     font-size: 26px;
+  }
+  .reviews-block {
+    max-width: 290px;
+  }
+  .reviews-block_name::before, .reviews-block_name::after {
+    top: 47%;
   }
 }
 
@@ -701,35 +708,29 @@ body {
   }
   .reviews_subtitle, .reviews_title {
     font-size: 28px;
-  }
-  .reviews-box {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .reviews-box_img {
-    max-width: 280px;
-    max-height: 157px;
+    margin-bottom: 30px;
   }
   .reviews-block {
-    height: 370px;
+    height: 335px;
+    max-width: 285px;
   }
   .reviews-block_name {
     font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
   .reviews-block_name::before, .reviews-block_name::after {
-    top: 55%;
+    top: 66%;
   }
   .reviews-block_text {
     font-size: 14px;
-    max-width: 280px;
+    width: 100%;
   }
 }
 
-@media (max-width: 932px) {
-  .reviews-box {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+@media (max-width: 966px) {
+  .reviews-block {
+    max-width: 330px;
   }
 }
 
@@ -742,15 +743,13 @@ body {
 @media (max-width: 768px) {
   .reviews_subtitle, .reviews_title {
     margin: 0 auto;
-    max-width: 95%;
+    max-width: 100%;
     margin-top: 15px;
-  }
-  .reviews-box_img {
-    max-width: 324px;
-    max-height: 182px;
+    font-size: 20px;
   }
   .reviews-block {
     height: 330px;
+    max-width: 290px;
   }
   .reviews-block_name {
     font-size: 16px;
@@ -759,21 +758,14 @@ body {
   }
   .reviews-block_name::before, .reviews-block_name::after {
     width: 20%;
-    top: 65%;
+    top: 59%;
   }
   .reviews-block_text {
     max-width: 324px;
   }
 }
 
-@media (max-width: 725px) {
-  .reviews_title {
-    font-size: 20px;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 582px) {
+@media (max-width: 666px) {
   .reviews_subtitle, .reviews_title {
     font-size: 20px;
     padding: 10px 0;
@@ -783,20 +775,18 @@ body {
   .reviews-block {
     width: 100%;
     max-width: 100%;
-    height: 400px;
+    height: 40%;
   }
   .reviews-block_text {
     max-width: 100%;
     width: 100%;
   }
-  .reviews-block_name::before, .reviews-block_name::after {
-    top: 77%;
+  .reviews-block_name {
+    margin-top: 25px;
+    margin-bottom: 20px;
   }
-  .reviews-box_img {
-    width: 100%;
-    max-width: 100%;
-    height: 274px;
-    max-height: 274px;
+  .reviews-block_name::before, .reviews-block_name::after {
+    display: none;
   }
 }
 
@@ -963,15 +953,17 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0000004D;
+  background-color: #000000ba;
   padding: 40px 140px;
   display: none;
+  overflow-y: scroll;
 }
 
 .modal_active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow-y: scroll;
 }
 
 .modal-box {
@@ -982,7 +974,7 @@ body {
   max-width: 920px;
   height: 690px;
   background-color: #F0F0F1;
-  padding: 94px 115px;
+  padding: 94px 100px;
   text-align: center;
 }
 
@@ -1006,7 +998,7 @@ body {
 
 .modal-form_input {
   margin-top: 24px;
-  width: 335px;
+  width: 330px;
 }
 
 .modal-form_input:nth-child(odd) {
@@ -1030,6 +1022,16 @@ body {
   font-size: 28px;
 }
 
+.modal-form-group {
+  display: inline-block;
+}
+
+.modal-form_span {
+  display: block;
+  color: red;
+  font-size: 16px;
+}
+
 @media (max-width: 1070px) {
   .modal {
     padding: 40px 40px;
@@ -1037,10 +1039,17 @@ body {
   .modal-box {
     width: 100%;
     max-width: 906px;
-    padding: 80px 100px;
+    padding: 80px 80px;
+  }
+  .modal-form-group {
+    width: 48%;
+  }
+  .modal-form-group-password {
+    width: 94%;
   }
   .modal-form_input {
-    width: 47%;
+    width: 90%;
+    margin-top: 15px;
   }
   .modal-form_password {
     width: 99%;
@@ -1049,14 +1058,18 @@ body {
 
 @media (max-width: 768px) {
   .modal-box {
-    padding-right: 30px;
-    padding-left: 35px;
+    padding-right: 20px;
+    padding-left: 25px;
   }
   .modal-box_title {
     font-size: 24px;
   }
+  .modal-form_span {
+    font-size: 14px;
+  }
   .modal-form_input {
     font-size: 20px;
+    margin-top: 8px;
   }
   .modal-form_text {
     font-size: 14px;
@@ -1067,17 +1080,31 @@ body {
 }
 
 @media (max-width: 576px) {
+  .modal {
+    padding: 30px 5px;
+  }
   .modal-box {
     padding: 50px;
+  }
+  .modal-form-group {
+    width: 100%;
   }
   .modal-form_input {
     width: 100%;
     margin-right: 0;
-    margin-top: 10px;
+    margin-top: 0;
+    font-size: 16px;
   }
   .modal-form_btn {
-    width: 100%;
+    width: 80%;
     padding: 12px 50px;
+  }
+  .modal-form_password {
+    font-size: 16px;
+  }
+  .modal-form_text {
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 }
 
@@ -1116,12 +1143,14 @@ body {
   background-color: #0000004D;
   padding: 80px 110px;
   display: none;
+  overflow: scroll;
 }
 
 .modal-leave_active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: scroll;
 }
 
 .modal-leave-box {
@@ -1181,6 +1210,15 @@ body {
   font-weight: bold;
 }
 
+.modal-leave-group {
+  display: inline-block;
+  width: 48%;
+}
+
+.modal-leave-group-password {
+  width: 95%;
+}
+
 .modal-leave-right {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -1203,10 +1241,8 @@ body {
 }
 
 .modal-leave-form_input {
-  max-width: 220px;
-  width: 46%;
-  display: inline-block;
-  margin-top: 24px;
+  width: 95%;
+  margin-top: 10px;
 }
 
 .modal-leave-form_input:nth-child(1), .modal-leave-form_input:nth-child(3) {
@@ -1222,7 +1258,7 @@ body {
 
 .modal-leave-form_password {
   max-width: 450px;
-  width: 70%;
+  width: 100%;
   margin-top: 15px;
   width: 97%;
 }
@@ -1230,7 +1266,7 @@ body {
 .modal-leave-form_btn {
   font-size: 24px;
   padding: 8px 109px;
-  margin-top: 35px;
+  margin-top: 22px;
 }
 
 @media (max-width: 992px) {
