@@ -11,15 +11,16 @@
     padding: 7px 25px
   &-box
     display: flex
-    justify-content: space-between
+    justify-content: space-around
     flex-wrap: wrap
+    align-items: center
   &-block
     max-width: 350px
     margin-top: 40px
     position: relative
-    height: 444px
-    // &_video
-    //  width: 350px
+    height: 460px
+    video
+      max-height: 197px
     &_name
       font-size: 28px
       color: $green
@@ -34,7 +35,7 @@
         background-color: $green
         width: 20%
         height: 1px
-        top: 54%                  
+        top: 52%                  
       &::after
         right: 0
       &::before
@@ -42,17 +43,19 @@
 
 @media (max-width: 1165px)
   .reviews
-    &-box
-      justify-content: space-between
     &_title
       max-width: 85%
       font-size: 26px  
     &-block
-      max-width: 290px  
+      max-width: 290px 
+      margin-top: 10px
+      height: 490px
+      video 
+        max-height: 161px 
       &_name
         &::before,
         &::after
-          top: 47%         
+          top: 45%         
 
         
 @media (max-width: 992px)
@@ -64,7 +67,7 @@
       font-size: 28px 
       margin-bottom: 30px
     &-block
-      height: 335px
+      height: 360px
       max-width: 285px
       &_name
         font-size: 28px 
@@ -72,7 +75,7 @@
         margin-bottom: 20px
         &::before,
         &::after
-          top: 66%
+          top: 54%
       &_text
         font-size: 14px
         width: 100%   
@@ -123,6 +126,7 @@
       width: 100%
       max-width: 100%  
       height: 40%
+      margin-top: 20px
       &_text
         max-width: 100%
         width: 100%  
@@ -131,6 +135,17 @@
         margin-bottom: 20px
         &::before,
         &::after
-          display: none  
+          top: 80% 
+      video
+        max-height: 275px 
+
+@media (max-width: 600px)
+  .reviews
+    &-block
+      &_name
+        &::before,
+        &::after
+          display: none 
+
 
       
