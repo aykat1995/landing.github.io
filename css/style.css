@@ -654,7 +654,7 @@ body {
 }
 
 .reviews-block {
-  max-width: 350px;
+  max-width: 345px;
   margin-top: 40px;
   position: relative;
   height: 460px;
@@ -691,6 +691,9 @@ body {
 }
 
 @media (max-width: 1165px) {
+  .reviews {
+    padding-bottom: 70px;
+  }
   .reviews_title {
     max-width: 85%;
     font-size: 26px;
@@ -704,11 +707,14 @@ body {
     max-height: 161px;
   }
   .reviews-block_name::before, .reviews-block_name::after {
-    top: 45%;
+    top: 42%;
   }
 }
 
 @media (max-width: 992px) {
+  .reviews {
+    padding-bottom: 60px;
+  }
   .reviews_title {
     max-width: 90%;
   }
@@ -754,7 +760,7 @@ body {
     font-size: 20px;
   }
   .reviews-block {
-    height: 330px;
+    height: 360px;
     max-width: 290px;
   }
   .reviews-block_name {
@@ -764,7 +770,7 @@ body {
   }
   .reviews-block_name::before, .reviews-block_name::after {
     width: 20%;
-    top: 59%;
+    top: 54%;
   }
   .reviews-block_text {
     max-width: 324px;
